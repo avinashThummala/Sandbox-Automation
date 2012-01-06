@@ -1,0 +1,29 @@
+#{set 'moreStyles'}
+    #{stylesheet id:'wufoo_dynamic', media:'screen, projection', src:'wufoo/dynamic.css', title:'wufoo dynamic stylesheet' /}
+    #{stylesheet id:'wufoo_theme', media:'screen, projection', src:'wufoo/theme.css', title:'wufoo theme stylesheet' /}
+#{/set}
+#{set 'moreScripts'}
+    #{script id:'validate_js', src:'jquery.plugins/jquery.validate.js', charset:'utf-8' /}
+    #{script id:'account_common', src:'profiles/Accounts/common.js', charset:'utf-8' /}
+    #{script id:'account_register', src:'profiles/Accounts/register/register.js', charset:'utf-8' /}
+#{/set}
+<div id="nav-wrap">
+	<div id="nav">
+		#{a @Application.index()}<img src="@{'/public/images/mypuja-logo.png'}" border="0" class="left" />#{/a}
+		<ul class="left">
+			<li><a href="#">Showcase</a></li>
+			<li><a href="">Community</a></li>
+			<li><a href="">Contests</a></li>
+			<li><a href="http://blog.mypuja.com/">Blog</a></li>
+			<li>Contact</li>
+		</ul>
+		
+		<div class="login-holder right">
+			<a href="#?w=500" class="login">Login/Sign-up</a>
+		</div>
+		
+	</div>
+	
+		
+		</div>
+</div>

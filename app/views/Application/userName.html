@@ -1,0 +1,71 @@
+#{extends 'finalMain.html' /}
+#{set title:'Developer registration' /}
+ 
+
+
+
+
+<div class="wikistyle">
+<h1>
+<a id="regForm">Please enter the following details to register for MyPuja Developer Program</a>
+</h1>
+
+<form action="@{Application.sendDoc()}" method="POST">
+    
+    <br />
+    <b>
+    <p>Username &nbsp;&nbsp;&nbsp;<input type="text" name="uName" /></p></b>
+    <br />
+    
+    <b>
+    <p>E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text" name="mailId" /></p></b>
+    <br />
+
+    <br />
+    <input type="submit" value="Submit" />
+
+</form>
+
+            <h1>Welcome to MyPuja Developer Program!</h1>
+            <p>
+                Thank you for your interest in the MyPuja Developer Program. This page will help you in the few next steps.
+            </p>
+            
+            <h2><a name="step-1"><img src="@{'/public/images/icons/number_1.png'}" class="list_icon"> Register Above</a></h2>
+            <p>
+                Enter your details in the <a href="#regForm">form above</a> to register for MyPuja developer program!
+            </p>
+
+            <p>
+			<h2><a name="step-2"><img src="@{'/public/images/icons/number_2.png'}" class="list_icon"> Sign the NDA</a></h2>
+                Once you have registered above, your will receive an e-mail from EchoSign to sign the MyPuja Non Disclosure Agreement (NDA). You can sign the NDA by visiting the link provided in the email.
+            </p>
+
+            <!--<pre><code></code></pre> !-->
+              
+            
+			<h2><a name="step-3"><img src="@{'/public/images/icons/number_3.png'}" class="list_icon"> Receive your developer access details</a></h2>
+                After you have successfully signed the NDA via EchoSign, you will receive an e-mail to your registered e-mail address with the access credentials to the MyPuja development sandbox.
+            </p>
+
+			<h2><a name="step-4"><img src="@{'/public/images/icons/number_4.png'}" class="list_icon"> Setup your PC for development</a></h2>
+                After you have your access details, you need to setup a Subversion (SVN) client and an editor or IDE for Java development on your computer. We recommend <a href="http://tortoisesvn.net/">TortoiseSVN</a> on Windows as the SVN client and <a href="http://eclipse.org/">Eclipse IDE</a> for Java development.
+            </p>
+            
+            <h2><a name="step-5"><img src="@{'/public/images/icons/number_5.png'}" class="list_icon"> Start working with MyPuja code</a></h2>
+            <p>
+                So your PC is ready for development, great! Checkout the MyPuja code using the details provided in the e-mail you received from us. You may also want to checkout the <a href="http://www.playframework.org">Play Framework</a> <a href="/@documentation/home">documentation</a>. Play is the framework we utilize to make development easier.
+            </p>
+            
+            <h2><a name="step-6"><img src="@{'/public/images/icons/number_6.png'}" class="list_icon"> Try your changes on the Sandbox</a></h2>
+            <p>
+                Each MyPuja developer is provided with a personal sandbox environment to try out their changes. Once you are finished making changes to the code, just commit your changes. Your Play application will be deployed in the sandbox and you will receive an automated e-mail with the details to access the deployed application.
+            </p>
+
+            <h2><a name="doc">Need more help?</a></h2>
+            <p>
+                Need help with Play Framework, visit their official site <a href="http://www.playframework.org/">here</a> or head on over to the <a href="http://groups.google.com/group/play-framework">Play Google Group</a> where Play users come to seek help and discuss. 
+                Need help with MyPuja code itself? Or having trouble with the sandbox? Shoot an email to
+                <br/><strong>developers@mypuja.com</strong>.
+            </p>
+        </div>

@@ -1,0 +1,25 @@
+#{extends 'finalMain.html' /}
+#{set title:'Developer login page' /}
+ 
+<center>
+<h1>
+Please enter your initial signup information
+</h1>
+
+<form action="@{Application.checkForgotPasswd()}" method="POST">
+    
+    <table><tr>	
+    <b><td>
+    Username &nbsp</td> <td><input type="text" name="uName" /></td></b>
+    <br></tr>
+    
+    <b><tr><td>
+    Email &nbsp</td> <td><input type="text" name="mailId" /></td></b>
+    <br></tr></table>
+
+    <br>
+    <input type="submit" value="Submit" />
+
+</form>
+
+</center>

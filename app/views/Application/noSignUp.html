@@ -1,0 +1,25 @@
+#{extends 'finalMain.html' /}
+#{set title:'Developer registration' /}
+ 
+<center>
+<h1>
+You didn't sign up. Please do so now
+</h1>
+
+<form action="@{Application.sendDoc()}" method="POST">
+    
+    <table><tr>	
+    <b><td>
+    Username &nbsp</td> <td><input type="text" name="uName" /></td></b>
+    <br></tr>
+    
+    <b><tr><td>
+    E-mail &nbsp</td> <td><input type="text" name="mailId" /></td></b>
+    <br></tr></table>
+
+    <br>
+    <input type="submit" value="Submit" />
+
+</form>
+
+</center> 

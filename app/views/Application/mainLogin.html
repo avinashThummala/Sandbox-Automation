@@ -1,0 +1,28 @@
+#{extends 'finalMain.html' /}
+#{set title:'Developer login page' /}
+ 
+<center>
+<h1>
+Please enter your access information
+</h1>
+
+<form action="@{Application.loginCheck()}" method="POST">
+    
+    <table><tr>	
+    <b><td>
+    Username &nbsp</td> <td><input type="text" name="uName" /></td></b>
+    <br></tr>
+    
+    <b><tr><td>
+    Password &nbsp</td> <td><input type="password" name="uPassword" /></td></b>
+    <br></tr></table>
+
+    <br>
+    <input type="submit" value="Submit" />
+
+    <br>
+    <a href="@{Application.forgotPasswd()}">Forgot password?</a>
+
+</form>
+
+</center>
